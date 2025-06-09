@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Iniciar sesión{% endblock %}
+
+{% block content %}
+
+<div class="title_signin">
+    <h1>GRUPO ESPECIAL DE RESCATE GER SAAVEDRA</h1>
+</div>
+<div class="ger_banner">
+    <img src="{% static 'pics/ger.png' %}" alt="Escudo del GER">
+</div>
+
+<div class="inicio_sesion">
+    <H2>INICIAR SESIÓN</H2>
+
+    {{error}}
+
+    <form  action="/signin/" method="POST"> 
+        {% csrf_token %}
+        {{form.as_p}}
+        <button>
+            Aceptar
+        </button>
+
+    </form>
+
+    <div class="txt_signin">
+
+        <p>Utilice el mismo usuario y contraseña provisto por la dependencia. El uso indebido recaerá en su correspondiente reproche administrativo.</p>
+
+        <strong>¿Olvido su contraseña?</strong> Comuniquese con su dependencia a fin de solicitar una nueva.
+    </div>
+</div>
+
+{% endblock %}

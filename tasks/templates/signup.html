@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Agregar turno{% endblock %}
+{% block content %}
+
+<h1 class="title_signup">GRUPO ESPECIAL DE RESCATE GER SAAVEDRA</h1>
+<div class="ger_banner">
+    <img src="{% static 'pics/ger.png' %}" alt="Escudo del GER">
+</div>
+
+<div class="crear_cuenta">
+        <H2> AÑADIR TURNO</H2>
+    <form action="/signup/" method="POST">
+    {% csrf_token %}
+    
+    {% for field in form %}
+        <div>
+            {{ field.label_tag }}<br>
+            {{ field }}<br>
+            {% if field.errors %}
+            {{ field.errors }}
+            {% endif %}
+        </div>
+    {% endfor %}
+    
+    <button>Crear turno nuevo</button>
+    </form>
+    <div class="amenaza">
+        <p><strong>La creación de un turno nuevo sin previa autorización superior conllevará su debido reproche administrativo.</strong></p>
+    </div>
+
+</div>
+{% endblock %}

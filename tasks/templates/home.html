@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Inicio{% endblock %}
+
+{% block content %}
+<h1 class="title_personnel">ORDENES DEL DÍA</h1>
+<div class="ger_banner">
+    <img src="{% static 'pics/ger.png' %}" alt="Escudo del GER">
+</div>
+<div class="orden-cuerpo-container">
+    <header class="orden-header">
+        <div class="orden-logo">
+            <img src="{% static 'pics/logo_bomberos.png' %}" alt="Logo Bomberos de la Ciudad">
+        </div>
+        <h1>BOMBEROS DE LA CIUDAD</h1>
+        <p class="slogan">SOMOS BOMBEROS | SOMOS NUESTROS VALORES</p>
+        <div class="valores">
+            <span>DISCIPLINA</span>
+            <span>EXCELENCIA</span>
+            <span>ESPÍRITU DE CUERPO</span>
+            <span>IDENTIDAD</span>
+            <span>SACRIFICIO</span>
+        </div>
+    </header>
+
+    <section class="orden-main-title">
+        <h2>ORDEN DEL CUERPO N° 006</h2>
+        <p class="fecha-ciudad">Ciudad Autónoma de Buenos Aires, lunes 03 de febrero de 2025.</p>
+        <p class="obligatorio">"El contenido de la presente es de conocimiento obligatorio para todo el personal del Cuerpo de Bomberos de la Ciudad de Buenos Aires"</p>
+    </section>
+
+    <section class="seccion-personal">
+        <h3>I. PERSONAL</h3>
+        <h4>Ascensos Personal Civil sin Estado Policial</h4>
+        <p>Mediante Anexo I, se adjunta Resolución N° 2025-115-GCABA-MSEGC por la cual el MINISTRO DE SEGURIDAD dispuso a partir del día 1º de enero de 2025, los ascensos del Personal Civil sin Estado Policial individualizado en los Anexos adjuntos</p>
+
+        <h4>DIRECCIÓN GENERAL DE ADMINISTRACIÓN DE RECURSOS HUMANOS</h4>
+        <p>Se adjunta nómina del personal que con motivo de haber cesado su incapacidad laboral, obtuvo de la Administradora de Riesgos del Trabajo - PROVINCIA ART el alta médica prevista en el artículo 7° apartado 2° inciso a) de la Ley N° 24557 Quien haya recibido el alta médica, aún habiendo solicitado la revisión de ésta, tiene la obligación de reintegrarse al servicio efectivo al día siguiente de la presente publicación conforme el artículo 12 del Anexo I de la Resolución N° 625/MJYSGC/18; correspondiendo a su destino de revista cumplir con las pautas contenidas en el artículo 13 de la citada norma. (NO-2025-05971075-GCABA-DGARHC, NO-2025-06109967-GCABA-DGARHC).</p>
+    </section>
+</div>
+{% endblock %}

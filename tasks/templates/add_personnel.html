@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Agregar personal{% endblock %}
+{% block content %}
+<h1 class="title_personnel">GRUPO ESPECIAL DE RESCATE GER SAAVEDRA</h1>
+<div class="ger_banner">
+    <img src="{% static 'pics/ger.png' %}" alt="Escudo del GER">
+</div>
+
+<div class="personal">
+    <h1>AGREGAR PERSONAL</h1>
+
+    {{error}}
+
+
+<form action="/personnel/add/" method="post">
+    {% csrf_token %}
+
+    {{form}}
+    <button>
+        aceptar
+    </button>  
+    <p><strong style="color: red;">De cargar un dato erroneo comunicarse con la oficina pertinente a finde de solucionar el error.</strong></p>
+
+
+    </form>
+</div>
+{% endblock %}crear

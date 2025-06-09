@@ -1,0 +1,358 @@
+/* HEADERRRRRRRRRRRRRRRRRRRRRRRRRRRR */
+.navbar {
+    background-color: #333;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.hamburger {
+    display: none; 
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 1000;
+}
+
+.hamburger .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-links-container ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.navbar li {
+    margin-right: 20px; 
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #555;
+}
+
+.user-info {
+    color: white;
+    font-weight: bold;
+    margin-left: auto;
+    padding: 8px 12px;
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .nav-links-container {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #333;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        z-index: 999;
+    }
+
+    .nav-links-container.active {
+        display: flex;
+    }
+
+    .nav-links-container ul {
+        flex-direction: column;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .navbar li {
+        margin: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar a {
+        display: block;
+        padding: 15px 0;
+    }
+
+    .user-info {
+        margin: 0;
+        width: 100%;
+        text-align: center;
+        padding: 15px 0;
+        background-color: #444;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
+
+/*__________CUERPO_____________*/
+
+body {
+    color: rgb(0, 0, 0);
+    background-color: #fff8dbe7; 
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+
+    /* ____ Css para el STICKY FOOTER____ */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-wrapper {
+    flex-grow: 1;
+}
+
+/*============ Pie de pagina ====================================================*/
+.footer-banner {
+    background-color: #555; 
+    color: white;           
+    padding: 15px 0;        
+    width: 100%;            
+    box-sizing: border-box; 
+    margin-top: auto;
+}
+
+.footer-content {
+    max-width: 960px; 
+    margin: 0 auto;   
+    display: flex;    
+    align-items: center; 
+    justify-content: center; 
+    gap: 20px;
+    justify-content: flex-start;
+    padding-left: 20px;
+}
+
+.footer-logo img {
+    width: auto;
+    height: 50px; 
+    display: block;
+    border-radius: 10px;
+
+}
+
+.footer-text p {
+    margin: 0; 
+    font-size: 1em; 
+}
+
+/* ===================================================== */
+
+/*===========================EStilo completo de SIGNIN===========================*/
+
+/*_________H1 de signin_______________*/
+.title_signin {
+    text-align: center;
+    margin-top: 20px;
+    color: #000000da;
+}
+/* _____Escudo GER_________*/
+.ger_banner {
+    background-color: black;
+    text-align: center;
+    padding: 10px 0;
+    margin: 20px 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+/*__________INICO DE SESION__________*/
+.inicio_sesion {
+    width: 400px;                
+    margin: 30px auto;
+    padding: 30px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: #d8ca9b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.txt_signin {
+    text-align: left;
+}
+
+/*================================Estilo completo sigup=======================*/
+
+.title_signup {
+    text-align: center;
+    margin-top: 20px;
+    color: #22211fda;
+}
+
+.crear_cuenta {
+    width: 400px;                
+    margin: 30px auto;
+    padding: 30px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: #d8ca9b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.8;
+}
+.amenaza {
+    color: rgb(255, 0, 0);
+    line-height: 1;
+}
+
+
+/*=======================Ver personal===========================================*/
+.title_personnel {
+    text-align: center;
+    margin-top: 20px;
+    color: #22211fda;
+}
+
+.personal {
+    width: 400px;                
+    margin: 30px auto;
+    padding: 30px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: #d8ca9b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+.personal ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+    width: 100%;
+}
+
+.personal li {
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+#id_especialidad {
+    float: right;
+    width: 300px;
+    padding: 10px;
+    text-align: left;
+}
+
+.personal {
+    line-height: 1.5;
+}
+
+/*===================================HOME====================*/
+
+.orden-cuerpo-container {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    line-height: 1.6;
+    color: #333;
+}
+
+.orden-header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.orden-logo img {
+    max-width: 150px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.orden-header h1 {
+    font-size: 2.2em;
+    color: #b30000;
+    margin: 10px 0 5px 0;
+    text-transform: uppercase;
+}
+
+.orden-header .slogan {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.orden-header .valores {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    font-weight: bold;
+    color: #333;
+    font-size: 0.85em;
+    text-transform: uppercase;
+}
+
+.orden-main-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.orden-main-title h2 {
+    font-size: 1.8em;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.orden-main-title .fecha-ciudad {
+    font-size: 0.9em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.orden-main-title .obligatorio {
+    font-style: italic;
+    color: #888;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #f9f9f9;
+    }

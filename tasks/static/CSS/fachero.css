@@ -1,4 +1,21 @@
 /* HEADERRRRRRRRRRRRRRRRRRRRRRRRRRRR */
+* {
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+body {
+    color: rgb(0, 0, 0);
+    background-color: #fff8dbe7;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
 .navbar {
     background-color: #333;
     padding: 10px;
@@ -9,7 +26,7 @@
 }
 
 .hamburger {
-    display: none; 
+    display: none;
     background: none;
     border: none;
     cursor: pointer;
@@ -35,7 +52,7 @@
 }
 
 .navbar li {
-    margin-right: 20px; 
+    margin-right: 20px;
 }
 
 .navbar a {
@@ -62,7 +79,6 @@
     .hamburger {
         display: block;
     }
-
 
     .nav-links-container {
         display: none;
@@ -113,10 +129,10 @@
     .crear_cuenta,
     .personal {
         width: 90%;
+        max-width: 400px;
         margin: 20px auto;
         padding: 15px;
     }
-
 
     .footer-content {
         flex-direction: column;
@@ -143,7 +159,7 @@
         gap: 5px;
     }
 
-    .orden-main-title h2{
+    .orden-main-title h2 {
         font-size: 1.5em;
     }
 
@@ -157,6 +173,7 @@
 
     #id_especialidad {
         width: 100%;
+        max-width: 300px;
         float: none;
         margin-top: 10px;
     }
@@ -164,52 +181,40 @@
 
 /*__________CUERPO_____________*/
 
-body {
-    color: rgb(0, 0, 0);
-    background-color: #fff8dbe7; 
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
 .main-wrapper {
     flex-grow: 1;
 }
 
 /*============ Pie de pagina ====================================================*/
 .footer-banner {
-    background-color: #555; 
+    background-color: #555;
     color: white;
     padding: 15px 0;
     width: 100%;
-    box-sizing: border-box; 
+    box-sizing: border-box;
     margin-top: auto;
 }
 
 .footer-content {
-    max-width: 960px; 
+    max-width: 960px;
     margin: 0 auto;
     display: flex;
-    align-items: center; 
-    justify-content: center; 
-    gap: 20px;
+    align-items: center;
     justify-content: flex-start;
+    gap: 20px;
     padding-left: 20px;
 }
 
 .footer-logo img {
     width: auto;
-    height: 50px; 
+    height: 50px;
     display: block;
     border-radius: 10px;
 }
 
 .footer-text p {
-    margin: 0; 
-    font-size: 1em; 
+    margin: 0;
+    font-size: 1em;
 }
 
 /* ===================================================== */
@@ -232,7 +237,8 @@ body {
 }
 
 .inicio_sesion {
-    width: 400px;
+    width: 90%;
+    max-width: 400px;
     margin: 30px auto;
     padding: 30px;
     border: 2px solid black;
@@ -249,7 +255,7 @@ body {
     text-align: left;
 }
 
-/*================================Estilo completo sigup=======================*/
+/*================================Estilo completo signup=======================*/
 
 .title_signup {
     text-align: center;
@@ -258,7 +264,8 @@ body {
 }
 
 .crear_cuenta {
-    width: 400px;
+    width: 90%;
+    max-width: 400px;
     margin: 30px auto;
     padding: 30px;
     border: 2px solid black;
@@ -270,6 +277,7 @@ body {
     justify-content: center;
     line-height: 1.8;
 }
+
 .amenaza {
     color: rgb(255, 0, 0);
     line-height: 1;
@@ -283,7 +291,8 @@ body {
 }
 
 .personal {
-    width: 400px;
+    width: 90%;
+    max-width: 400px;
     margin: 30px auto;
     padding: 30px;
     border: 2px solid black;
@@ -293,6 +302,7 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    line-height: 1.5;
 }
 
 .personal ul {
@@ -309,13 +319,10 @@ body {
 
 #id_especialidad {
     float: right;
-    width: 300px;
+    width: 100%;
+    max-width: 300px;
     padding: 10px;
     text-align: left;
-}
-
-.personal {
-    line-height: 1.5;
 }
 
 /*===================================HOME====================*/

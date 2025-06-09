@@ -63,6 +63,7 @@
         display: block;
     }
 
+
     .nav-links-container {
         display: none;
         flex-direction: column;
@@ -104,16 +105,60 @@
         background-color: #444;
     }
 
-    .hamburger.active .bar:nth-child(2) {
-        opacity: 0;
+    body {
+        font-size: 14px;
     }
 
-    .hamburger.active .bar:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
+    .inicio_sesion,
+    .crear_cuenta,
+    .personal {
+        width: 90%;
+        margin: 20px auto;
+        padding: 15px;
     }
 
-    .hamburger.active .bar:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+        padding-left: 0;
+    }
+
+    .footer-logo img {
+        height: 40px;
+        margin-bottom: 10px;
+    }
+
+    .orden-cuerpo-container {
+        padding: 15px;
+        margin: 20px auto;
+    }
+
+    .orden-header h1 {
+        font-size: 1.8em;
+    }
+
+    .orden-header .valores {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .orden-main-title h2{
+        font-size: 1.5em;
+    }
+
+    .seccion-personal h3 {
+        font-size: 1.3em;
+    }
+
+    .seccion-personal h4 {
+        font-size: 1.1em;
+    }
+
+    #id_especialidad {
+        width: 100%;
+        float: none;
+        margin-top: 10px;
     }
 }
 
@@ -125,8 +170,6 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-
-    /* ____ Css para el STICKY FOOTER____ */
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -139,17 +182,17 @@ body {
 /*============ Pie de pagina ====================================================*/
 .footer-banner {
     background-color: #555; 
-    color: white;           
-    padding: 15px 0;        
-    width: 100%;            
+    color: white;
+    padding: 15px 0;
+    width: 100%;
     box-sizing: border-box; 
     margin-top: auto;
 }
 
 .footer-content {
     max-width: 960px; 
-    margin: 0 auto;   
-    display: flex;    
+    margin: 0 auto;
+    display: flex;
     align-items: center; 
     justify-content: center; 
     gap: 20px;
@@ -162,7 +205,6 @@ body {
     height: 50px; 
     display: block;
     border-radius: 10px;
-
 }
 
 .footer-text p {
@@ -174,13 +216,12 @@ body {
 
 /*===========================EStilo completo de SIGNIN===========================*/
 
-/*_________H1 de signin_______________*/
 .title_signin {
     text-align: center;
     margin-top: 20px;
     color: #000000da;
 }
-/* _____Escudo GER_________*/
+
 .ger_banner {
     background-color: black;
     text-align: center;
@@ -190,10 +231,8 @@ body {
     box-sizing: border-box;
 }
 
-
-/*__________INICO DE SESION__________*/
 .inicio_sesion {
-    width: 400px;                
+    width: 400px;
     margin: 30px auto;
     padding: 30px;
     border: 2px solid black;
@@ -219,7 +258,7 @@ body {
 }
 
 .crear_cuenta {
-    width: 400px;                
+    width: 400px;
     margin: 30px auto;
     padding: 30px;
     border: 2px solid black;
@@ -236,7 +275,6 @@ body {
     line-height: 1;
 }
 
-
 /*=======================Ver personal===========================================*/
 .title_personnel {
     text-align: center;
@@ -245,7 +283,7 @@ body {
 }
 
 .personal {
-    width: 400px;                
+    width: 400px;
     margin: 30px auto;
     padding: 30px;
     border: 2px solid black;
@@ -256,7 +294,6 @@ body {
     align-items: center;
     text-align: center;
 }
-
 
 .personal ul {
     list-style-type: none;
@@ -355,4 +392,4 @@ body {
     margin: 0 auto;
     padding: 10px;
     background-color: #f9f9f9;
-    }
+}
